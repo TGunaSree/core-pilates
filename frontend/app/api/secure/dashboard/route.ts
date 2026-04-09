@@ -5,7 +5,7 @@ export async function GET(request: Request) {
   try {
     const token = cookies().get('auth_token')?.value;
 
-    const API_URL = process.env.API_URL || "http://127.0.0.1:8000";
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
     const [bookingsRes, contactRes] = await Promise.all([
         fetch(`${API_URL}/api/bookings/`, { 
             cache: 'no-store',

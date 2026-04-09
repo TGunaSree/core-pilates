@@ -9,7 +9,7 @@ export async function POST(request: Request) {
         customer_email: data.customer_email
     }
 
-    const API_URL = process.env.API_URL || "http://127.0.0.1:8000";
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
     // Proxy the request securely to Django
     const response = await fetch(`${API_URL}/api/bookings/`, {
       method: "POST",

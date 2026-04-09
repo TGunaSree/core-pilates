@@ -28,13 +28,13 @@ try:
     if PilatesClass.objects.count() == 0:
         base_time = timezone.now() + timedelta(days=1)
         classes = [
-            {"title": "Mat Control", "description": "Fundamental core activation on the mat.", "date_time": base_time, "duration_minutes": 50, "price": "35.00", "capacity": 10, "instructor": instructor},
-            {"title": "Pilates Circuit", "description": "High-intensity studio equipment rotation.", "date_time": base_time + timedelta(hours=2), "duration_minutes": 55, "price": "45.00", "capacity": 10, "instructor": instructor},
-            {"title": "Cadillac Flow", "description": "Deep stretching and trapeze tower work.", "date_time": base_time + timedelta(days=1), "duration_minutes": 60, "price": "50.00", "capacity": 10, "instructor": instructor},
-            {"title": "Reformer Flow", "description": "Dynamic full-body workout on the reformer.", "date_time": base_time + timedelta(days=2), "duration_minutes": 50, "price": "40.00", "capacity": 10, "instructor": instructor},
-            {"title": "Stability Chair", "description": "Advanced balance and core stabilization.", "date_time": base_time + timedelta(days=3), "duration_minutes": 45, "price": "35.00", "capacity": 10, "instructor": instructor},
-            {"title": "Tower Integration", "description": "Spring-loaded resistance training.", "date_time": base_time + timedelta(days=4), "duration_minutes": 50, "price": "40.00", "capacity": 10, "instructor": instructor},
-            {"title": "Curated by Core", "description": "Signature comprehensive studio experience.", "date_time": base_time + timedelta(days=5), "duration_minutes": 75, "price": "60.00", "capacity": 10, "instructor": instructor}
+            {"title": "Mat Control", "description": "Fundamental core activation on the mat.", "date_time": base_time, "duration_minutes": 50, "price": "2900.00", "capacity": 10, "instructor": instructor},
+            {"title": "Pilates Circuit", "description": "High-intensity studio equipment rotation.", "date_time": base_time + timedelta(hours=2), "duration_minutes": 55, "price": "3700.00", "capacity": 10, "instructor": instructor},
+            {"title": "Cadillac Flow", "description": "Deep stretching and trapeze tower work.", "date_time": base_time + timedelta(days=1), "duration_minutes": 60, "price": "4200.00", "capacity": 10, "instructor": instructor},
+            {"title": "Reformer Flow", "description": "Dynamic full-body workout on the reformer.", "date_time": base_time + timedelta(days=2), "duration_minutes": 50, "price": "3300.00", "capacity": 10, "instructor": instructor},
+            {"title": "Stability Chair", "description": "Advanced balance and core stabilization.", "date_time": base_time + timedelta(days=3), "duration_minutes": 45, "price": "2900.00", "capacity": 10, "instructor": instructor},
+            {"title": "Tower Integration", "description": "Spring-loaded resistance training.", "date_time": base_time + timedelta(days=4), "duration_minutes": 50, "price": "3300.00", "capacity": 10, "instructor": instructor},
+            {"title": "Curated by Core", "description": "Signature comprehensive studio experience.", "date_time": base_time + timedelta(days=5), "duration_minutes": 75, "price": "5000.00", "capacity": 10, "instructor": instructor}
         ]
         
         for c in classes:

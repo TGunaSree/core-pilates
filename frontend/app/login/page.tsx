@@ -46,14 +46,14 @@ export default function Login() {
         {status === "error" && <p className="text-red-500 text-xs mb-4">Mismatched credentials. Please try again.</p>}
         {status === "success" && <p className="text-green-600 text-xs mb-4">Authentication successful. Redirecting...</p>}
 
-        <form onSubmit={handleLogin} className="space-y-6">
+        <form onSubmit={handleLogin} className="space-y-6" autoComplete="off">
           <div>
             <label className="text-[0.65rem] uppercase tracking-[0.2em] opacity-50 block mb-2 font-medium">Username</label>
-            <input value={username} onChange={e => setUsername(e.target.value)} type="text" className="w-full bg-transparent border-b border-[#3c3029]/20 py-3 focus:outline-none focus:border-[#3c3029] transition-colors" placeholder="sophia" />
+            <input autoComplete="off" value={username} onChange={e => setUsername(e.target.value)} type="text" className="w-full bg-transparent border-b border-[#3c3029]/20 py-3 focus:outline-none focus:border-[#3c3029] transition-colors" placeholder="sophia" />
           </div>
           <div>
             <label className="text-[0.65rem] uppercase tracking-[0.2em] opacity-50 block mb-2 font-medium mt-6">Password</label>
-            <input value={password} onChange={e => setPassword(e.target.value)} type="password" className="w-full bg-transparent border-b border-[#3c3029]/20 py-3 focus:outline-none focus:border-[#3c3029] transition-colors" placeholder="••••••••" />
+            <input autoComplete="new-password" value={password} onChange={e => setPassword(e.target.value)} type="password" className="w-full bg-transparent border-b border-[#3c3029]/20 py-3 focus:outline-none focus:border-[#3c3029] transition-colors" placeholder="••••••••" />
           </div>
           
           <button type="submit" className="w-full bg-[#3c3029] text-white py-4 text-[0.65rem] uppercase tracking-[0.2em] hover:bg-[#3c3029]/80 transition-colors mt-8 font-medium">
